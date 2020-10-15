@@ -19,7 +19,7 @@ describe("Switch Window", function (){
         expect(internetPage.getValueFromBody()).equals("Hola Mundo!")
     })
 
-    it("Should drag and drop", () => {
+    it.skip("Should drag and drop", () => {
         browser.url("/")
         internetPage.clickOnLink(10)
         expect(internetPage.getDragAndDropValue()).equals("Drag and Drop")
